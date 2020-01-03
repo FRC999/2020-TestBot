@@ -39,7 +39,7 @@ public class Robot extends TimedRobot {
     chooser.setDefaultOption("Default Auto", new ManualDrivingCommand());
     //chooser.addOption("My Auto", new MyAutoCommand());
     SmartDashboard.putData("Auto mode", chooser);
-
+    SmartDashboard.putBoolean("Test Boolean", TestBool);
     Robot.driveSubsystem.ResetDriveTrainControllers();
     Robot.driveSubsystem.ZeroDriveEncoders();
     Robot.driveSubsystem.DriveTrainBrakeMode();
