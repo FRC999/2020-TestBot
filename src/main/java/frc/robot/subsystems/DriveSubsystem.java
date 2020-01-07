@@ -35,6 +35,8 @@ static SpeedControllerGroup rightDriveMotorGroup = new SpeedControllerGroup(fron
 public static DifferentialDrive drive = new DifferentialDrive(leftDriveMotorGroup, rightDriveMotorGroup);
 
 public void ManualDrive(double move, double turn){
+ 
+ /*
   // Testing Mode
   //Slow things down for testing mode.... Comment out when not testing
   if (move > 0.25) {
@@ -44,6 +46,7 @@ public void ManualDrive(double move, double turn){
     turn = 0.25;
   }
   // End Testing Mode
+*/
 
   drive.arcadeDrive(move, turn);
 }
